@@ -2,22 +2,36 @@
 @{
     Layout = null;
 }
-
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
 <h3>Mvc kamp tablo örnegi - kategori</h3>
 <br />
 
-<table>
+<table class="table table-hover">
     <tr>
         <th>ID</th>
         <th>Name</th>
         <th>Açıklama</th>
         <th>Durum</th>
+        <th>Güncelle</th>
     </tr>
     <tr>
         <td>1</td>
         <td>Eğitim</td>
         <td>Açıklama yapıldı</td>
         <td>True</td>
+        <td><button class="btn btn-success">Güncellle</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Spor</td>
+        <td>Açıklama yapıldı</td>
+        <td>True</td>
+        <td><button class="btn btn-success">Güncellle</button></td>
     </tr>
 </table>
+
+
+<button class="btn btn-info">Yeni kategori</button>
+<button class="btn btn-warning">Kategori listesi</button>
+<button class="btn btn-danger">Kategori açıklamaları</button>

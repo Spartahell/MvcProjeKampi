@@ -1,0 +1,27 @@
+﻿@model EntitiyLayer.Concrete.Category
+@{
+    ViewBag.Title = "EditCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+
+<h2>Kategori Güncelleme sayfası</h2>
+
+
+
+@using (Html.BeginForm("EditCategory", "AdminCategory", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Kategori Id")
+    @Html.TextBoxFor(c => c.CategoryID, new { @class = "form-control"})
+    <br />
+    @Html.Label("Kategori Adı");
+    @Html.TextBoxFor(c => c.CategoryName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kategori Description");
+    @Html.TextAreaFor(c => c.CategoryDescription, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Güncelle </button>
+</div>
+}

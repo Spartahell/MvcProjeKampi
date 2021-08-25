@@ -60,6 +60,12 @@
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
+    <Compile Include="EntityFramework\EfAboutDal.cs" />
+    <Compile Include="EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="EntityFramework\EfContactDal.cs" />
+    <Compile Include="EntityFramework\EfContentDal.cs" />
+    <Compile Include="EntityFramework\EfHeadingDal.cs" />
+    <Compile Include="EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202108242148578_mig1.cs" />
     <Compile Include="Migrations\202108242148578_mig1.designer.cs">
       <DependentUpon>202108242148578_mig1.cs</DependentUpon>
@@ -72,9 +78,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EntitiyLayer\EntitiyLayer.csproj">
+    <ProjectReference Include="..\EntitiyLayer\EntityLayer.csproj">
       <Project>{3b5f5e16-4878-4699-b7d8-da362a54b660}</Project>
-      <Name>EntitiyLayer</Name>
+      <Name>EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
