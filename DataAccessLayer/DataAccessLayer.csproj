@@ -74,6 +74,22 @@
     <Compile Include="Migrations\202108301217238_mig_writer_edit.designer.cs">
       <DependentUpon>202108301217238_mig_writer_edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108311305564_mig_imagesizechange.cs" />
+    <Compile Include="Migrations\202108311305564_mig_imagesizechange.designer.cs">
+      <DependentUpon>202108311305564_mig_imagesizechange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108311322310_mig_addwriterstatus.cs" />
+    <Compile Include="Migrations\202108311322310_mig_addwriterstatus.designer.cs">
+      <DependentUpon>202108311322310_mig_addwriterstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108311505520_mig_addcontentstatus.cs" />
+    <Compile Include="Migrations\202108311505520_mig_addcontentstatus.designer.cs">
+      <DependentUpon>202108311505520_mig_addcontentstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108311511327_mig_addheadingstatus.cs" />
+    <Compile Include="Migrations\202108311511327_mig_addheadingstatus.designer.cs">
+      <DependentUpon>202108311511327_mig_addheadingstatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,6 +109,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108301217238_mig_writer_edit.resx">
       <DependentUpon>202108301217238_mig_writer_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108311305564_mig_imagesizechange.resx">
+      <DependentUpon>202108311305564_mig_imagesizechange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108311322310_mig_addwriterstatus.resx">
+      <DependentUpon>202108311322310_mig_addwriterstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108311505520_mig_addcontentstatus.resx">
+      <DependentUpon>202108311505520_mig_addcontentstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108311511327_mig_addheadingstatus.resx">
+      <DependentUpon>202108311511327_mig_addheadingstatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
