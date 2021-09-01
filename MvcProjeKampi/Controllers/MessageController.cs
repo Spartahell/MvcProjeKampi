@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using EntitiyLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +17,29 @@ namespace MvcProjeKampi.Controllers
         MessageManager messageManager = new MessageManager(new EfMessageDal());
         public ActionResult Inbox()
         {
-            var messageList = messageManager.GetList();
+            var messageList = messageManager.GetListInbox();
             return View(messageList);
         }
+
+        public ActionResult SendBox()
+        {
+            var messageList = messageManager.GetListSendbox();
+            return View(messageList);
+        }
+
+
+        [HttpGet]
+        public ActionResult NewMessage()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult NewMessage(Message message)
+        {
+            return View();
+        }
+    
+
     }
 }
